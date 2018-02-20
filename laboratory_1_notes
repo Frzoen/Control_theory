@@ -1,7 +1,11 @@
 approach of generating random numbers from sine function:
 -can go into fixed point
 -one we hit this same value twice the sequence repeats
--
+-non linear 
+
+approach of generating random numbers from sawtooth function:
+-linear
+-has fixed points
 
 montecarlo methode:
 No/N ~ Vo/V
