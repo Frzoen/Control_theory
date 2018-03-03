@@ -1,7 +1,6 @@
-function [ ] = sort_N( )%input_args )
+function [ ] = sort_N( selected_column )
 global model_database;
 [rows,columns] = size(model_database);
-selected_column = 'A';
 determinant = [];
 for i=1:1:rows
     determinant = [determinant; det(eval(sprintf('model_database(%d).%s', i, selected_column)))];
