@@ -1,7 +1,6 @@
 function [] = reaf_f( filename )
-file = fopen(filename);
-global model_database;
-model_database = [];
+file=fopen(filename, 'w'); % open handle for file
+global model_database; % load database from workspace
 tmp_model = struct ('name','','A','','B','','C','','D','');
 while (feof(file) ~= 1)
     name = fgetl(file);
