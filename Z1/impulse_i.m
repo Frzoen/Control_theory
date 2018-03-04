@@ -1,11 +1,13 @@
 function [ ] = impulse_i( t )
-global impulse;
-impulse = [];
+global impulse_signal;
+impulse_signal = [];
+global time;
+time = -1:0.001:10*t;
 for i = -1:0.001:10*t
     if (i >= 0) && (i<=t)
-        impulse = [impulse; 1/t];
+        impulse_signal = [impulse_signal; 1/t];
     else
-        impulse = [impulse; 0];
+        impulse_signal = [impulse_signal; 0];
     end 
     
 end
