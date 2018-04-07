@@ -8,7 +8,7 @@ for i=1:1:rows
     % vectors
     % adding element to vector: vec = [vec, element_added] for horizontal 
     % vectors
-    determinant = [determinant; det(eval(sprintf('model_database(%d).%s', i, selected_column)))]; 
+    determinant = [determinant; norm(eval(sprintf('model_database(%d).%s', i, selected_column)))]; 
 end
 [B,I] = sort(determinant); % sorting determinants ascending, B is sorted 
                            % vextor of determinants and I is vector of 
